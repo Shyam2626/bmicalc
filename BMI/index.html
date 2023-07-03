@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <title>BMI</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+
+        <div class="content-row">
+            <input type="text" list="weightList" id="weight" class="content" placeholder="Choose Unit">
+            <datalist id="weightList">
+                <option value="Kilograms">
+                <option value="Pounds">
+            </datalist>
+            <input type="number" class="content" placeholder="Enter Weight" id="kglbs">
+        </div>
+
+        <div class="content-row">
+            <input type="text" list="heightList" id="height" class="content" placeholder="Choose Unit">
+            <datalist id="heightList">
+                <option value="Metres">
+                <option value="Centimetres">
+                <option value="Feet">
+            </datalist>
+            <input type="number" class="content" placeholder="Enter Height" id="mcm">
+        </div>
+
+        <button type="button" id="btn" class="btn">Calculate BMI</button>
+        <div id="show" class="show"></div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
